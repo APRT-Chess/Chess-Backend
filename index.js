@@ -17,7 +17,7 @@ const app = express();
 const server = createServer(app);
 
 //io will handle all the socket connections
-const io = new Server(server, { cors: { origin: "https://chess-backend-foom.onrender.com/" } });
+const io = new Server(server, { cors: { origin: "https://aprt-chess-testing.netlify.app/" } });
 
 const PORT = 4000;
 

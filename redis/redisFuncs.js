@@ -1,6 +1,7 @@
 import Redis from "ioredis";
 
-const redis = new Redis(6397, "redis://red-cn3o8ua1hbls73adk5rg");
+// const redis = new Redis(6397, "redis://red-cn3o8ua1hbls73adk5rg");
+const redis = new Redis(`rediss://red-cn3o8ua1hbls73adk5rg:pbDmk2TMkSP1U0lcJQ0gStihrZynzm8f@oregon-redis.render.com:6379`)
 
 // creats a game in GlobalHashMap with host's mail
 export async function createGameInRedis(hostUid, hostEmail) {
